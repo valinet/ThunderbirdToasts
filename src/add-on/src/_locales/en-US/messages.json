@@ -1,0 +1,245 @@
+{
+    "extensionDescription": {
+        "message": "Native Windows 10 notification support for incoming mail"
+    },
+    "extensionName": {
+        "message": "Windows 10 Native Notifications"
+    },
+    "lang.settings": {
+        "message": "Settings"
+    },
+	"lang.defaultValue": {
+        "message": "Default value is "
+    },
+	"lang.DemoToast": {
+        "message": "Test your settings"
+    },
+	"lang.DemoToastButton": {
+        "message": "Demo"
+    },
+	"lang.OtherOptions": {
+        "message": "Other options"
+    },
+	"lang.UninstallButton": {
+        "message": "Uninstall"
+    },
+	"lang.AboutButton": {
+        "message": "About"
+    },
+	"lang.availableWildcards": {
+        "message": "Field wildcards"
+    },
+	"lang.AuthorWildcard": {
+        "message": "@AUTHOR@"
+    },
+	"lang.AuthorWildcardD": {
+        "message": "Mail sender"
+    },
+	"lang.BccListWildcard": {
+        "message": "@BCCLIST@"
+    },
+	"lang.BccListWildcardD": {
+        "message": "People in the Bcc list, comma separated"
+    },
+	"lang.CcListWildcard": {
+        "message": "@CCLIST@"
+    },
+	"lang.CcListWildcardD": {
+        "message": "People in the Cc list, comma separated"
+    },
+	"lang.DateWildcard": {
+        "message": "@DATE@"
+    },
+	"lang.DateWildcardD": {
+        "message": "Human readable date and time of the message"
+    },
+	"lang.FolderAccountWildcard": {
+        "message": "@FOLDERACCOUNT@"
+    },
+	"lang.FolderAccountWildcardD": {
+        "message": "Account the folder of the mail belongs to"
+    },
+	"lang.FolderNameWildcard": {
+        "message": "@FOLDERNAME@"
+    },
+	"lang.FolderNameWildcardD": {
+        "message": "Name of the folder the mail belongs to"
+    },
+	"lang.FolderPathWildcard": {
+        "message": "@FOLDERPATH@"
+    },
+	"lang.FolderPathWildcardD": {
+        "message": "Path of the folder the mail belongs to"
+    },
+	"lang.FolderTypeWildcard": {
+        "message": "@FOLDERTYPE@"
+    },
+	"lang.FolderTypeWildcardD": {
+        "message": "Type of folder the mail belongs to"
+    },
+	"lang.MessageIdWildcard": {
+        "message": "@MESSAGEID@"
+    },
+	"lang.MessageIdWildcardD": {
+        "message": "Mail ID (Message-Id header)"
+    },
+	"lang.RecipientsWildcard": {
+        "message": "@RECIPIENTS@"
+    },
+	"lang.RecipientsWildcardD": {
+        "message": "Full list of recipients"
+    },
+	"lang.SubjectWildcard": {
+        "message": "@SUBJECT@"
+    },
+	"lang.SubjectWildcardD": {
+        "message": "Mail subject"
+    },
+	"lang.appid": {
+        "message": "Application ID"
+    },
+	"appid.default": {
+        "message": "D78BF5DD33499EC2"
+    },
+	"lang.toastSubject": {
+        "message": "Heading"
+    },
+	"toastSubject.default": {
+        "message": "@AUTHOR@"
+    },
+	"lang.toastBody": {
+        "message": "Contents"
+    },
+	"toastBody.default": {
+        "message": "@SUBJECT@"
+    },
+	"lang.toastFooter": {
+        "message": "Footer"
+    },
+	"toastFooter.default": {
+        "message": "@RECIPIENTS@"
+    },
+	"lang.toastDuration": {
+        "message": "Notification duration"
+    },
+	"toastDuration.short": {
+        "message": "short"
+    },
+	"toastDuration.long": {
+        "message": "long"
+    },
+	"toastDuration.persist": {
+        "message": "persist"
+    },
+	"lang.toastAudio": {
+        "message": "Audio"
+    },
+	"toastAudio.Default": {
+        "message": "Default"
+    },
+	"toastAudio.IM": {
+        "message": "IM"
+    },
+	"toastAudio.Mail": {
+        "message": "Mail"
+    },
+	"toastAudio.Reminder": {
+        "message": "Reminder"
+    },
+	"toastAudio.SMS": {
+        "message": "SMS"
+    },
+	"toastAudio.LoopingAlarm": {
+        "message": "Looping Alarm"
+    },
+	"toastAudio.LoopingAlarm2": {
+        "message": "Looping Alarm 2"
+    },
+	"toastAudio.LoopingAlarm3": {
+        "message": "Looping Alarm 3"
+    },
+	"toastAudio.LoopingAlarm4": {
+        "message": "Looping Alarm 4"
+    },
+	"toastAudio.LoopingAlarm5": {
+        "message": "Looping Alarm 5"
+    },
+	"toastAudio.LoopingAlarm6": {
+        "message": "Looping Alarm 6"
+    },
+	"toastAudio.LoopingAlarm7": {
+        "message": "Looping Alarm 7"
+    },
+	"toastAudio.LoopingAlarm8": {
+        "message": "Looping Alarm 8"
+    },
+	"toastAudio.LoopingAlarm9": {
+        "message": "Looping Alarm 9"
+    },
+	"toastAudio.LoopingAlarm10": {
+        "message": "Looping Alarm 10"
+    },
+	"toastAudio.LoopingCall": {
+        "message": "Looping Call"
+    },
+	"toastAudio.LoopingCall2": {
+        "message": "Looping Call 2"
+    },
+	"toastAudio.LoopingCall3": {
+        "message": "Looping Call 3"
+    },
+	"toastAudio.LoopingCall4": {
+        "message": "Looping Call 4"
+    },
+	"toastAudio.LoopingCall5": {
+        "message": "Looping Call 5"
+    },
+	"toastAudio.LoopingCall6": {
+        "message": "Looping Call 6"
+    },
+	"toastAudio.LoopingCall7": {
+        "message": "Looping Call 7"
+    },
+	"toastAudio.LoopingCall8": {
+        "message": "Looping Call 8"
+    },
+	"toastAudio.LoopingCall9": {
+        "message": "Looping Call 9"
+    },
+	"toastAudio.LoopingCall10": {
+        "message": "Looping Call 10"
+    },
+	"toastAudio.Silent": {
+        "message": "Disabled"
+    },
+	"lang.toastLoopAudio": {
+        "message": "Sound effect"
+    },
+	"toastLoopAudio.false": {
+        "message": "Play once"
+    },
+	"toastLoopAudio.true": {
+        "message": "Loop"
+    },
+	"lang.toastDisplayMessage": {
+        "message": "When activating a toast, show the message in:"
+    },
+	"toastDisplayMessage.nw": {
+        "message": "new window"
+    },
+	"toastDisplayMessage.nt": {
+        "message": "new tab"
+    },
+	"toastDisplayMessage.3p": {
+        "message": "3-pane view"
+    },
+	"lang.Dismiss": {
+        "message": "Dismiss"
+    },
+	"lang.UninstallQuestion": {
+		"message": "This will delete the add-on and unregister the background helper process. To reinstall, run the installation program again.\n\nAre you sure you want to continue? This will also close Thunderbird. Make sure you save any in progress work."
+	},
+	"lang.AboutText": {
+		"message": "Windows 10 Native Notifications for Thunderbird\n\nCopyright (c) 2006-2021 VALINET Solutions SRL (Valentin-Gabriel Radu). All rights reserved.\nhttps://github.com/valinet/ThunderbirdToasts\n\nvalentin.radu@valinet.ro\nhttps://www.valinet.ro\nhttps://github.com/valinet\n\nThis is libre software. Learn more about its license at https://github.com/valinet/ThunderbirdToasts/LICENSE."
+	}
+}

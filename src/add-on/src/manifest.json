@@ -1,0 +1,37 @@
+{
+	"applications": {
+		"gecko": {
+			"id": "ThunderbirdToasts@valinet.ro",
+			"strict_min_version": "78.0"
+		}
+	},
+	"manifest_version": 2,
+	"name": "__MSG_extensionName__",
+	"version": "1.0",
+	"author": "valinet",
+	"description": "__MSG_extensionDescription__",
+	"default_locale": "en-US",
+	"permissions": ["storage", "messagesRead", "accountsRead", "nativeMessaging"],
+	"background": {
+		"scripts": ["content/api/preferences/preferences.js", "background.js", "toast.js"]
+	},
+	"experiment_apis": {
+        "cb_api": {
+            "schema": "content/api/cb_thunderlink/mail_extension/cb_api_schema.json",
+            "parent": {
+                "scopes": [
+                    "addon_parent"
+                ],
+                "paths": [
+                    [ "cb_api" ]
+                ],
+                "script": "content/api/cb_thunderlink/mail_extension/cb_api.js"
+            }
+        }
+    },
+	"options_ui": {
+		"page": "content/options/options.html",
+		"browser_style": true,
+		"open_in_tab": false
+	}
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<script src="/content/api/locales/locales.js"></script>
+	<script src="/content/api/preferences/preferences.js"></script>
+	<script src="/content/options/options.js"></script>
+  </head>
+  <body>
+    <hr>
+    <div class="ees" style="font-size:small">
+      <label>
+		<div><strong>__VALINET_lang.availableWildcards__</strong></div>
+		<ul>
+		<li><em>__VALINET_lang.AuthorWildcard__</em>&nbsp;-&nbsp;__VALINET_lang.AuthorWildcardD__</li>
+		<li><em>__VALINET_lang.BccListWildcard__</em>&nbsp;-&nbsp;__VALINET_lang.BccListWildcardD__</li>
+		<li><em>__VALINET_lang.CcListWildcard__</em>&nbsp;-&nbsp;__VALINET_lang.CcListWildcardD__</li>
+		<li><em>__VALINET_lang.DateWildcard__</em>&nbsp;-&nbsp;__VALINET_lang.DateWildcardD__</li>
+		<li><em>__VALINET_lang.FolderAccountWildcard__</em>&nbsp;-&nbsp;__VALINET_lang.FolderAccountWildcardD__</li>
+		<li><em>__VALINET_lang.FolderNameWildcard__</em>&nbsp;-&nbsp;__VALINET_lang.FolderNameWildcardD__</li>
+		<li><em>__VALINET_lang.FolderPathWildcard__</em>&nbsp;-&nbsp;__VALINET_lang.FolderPathWildcardD__</li>
+		<li><em>__VALINET_lang.FolderTypeWildcard__</em>&nbsp;-&nbsp;__VALINET_lang.FolderTypeWildcardD__</li>
+		<li><em>__VALINET_lang.MessageIdWildcard__</em>&nbsp;-&nbsp;__VALINET_lang.MessageIdWildcardD__</li>
+		<li><em>__VALINET_lang.RecipientsWildcard__</em>&nbsp;-&nbsp;__VALINET_lang.RecipientsWildcardD__</li>
+		<li><em>__VALINET_lang.SubjectWildcard__</em>&nbsp;-&nbsp;__VALINET_lang.SubjectWildcardD__</li>
+		</ul>
+		<div><strong>__VALINET_lang.toastSubject__</strong></div>
+		<input style="width: 100%" type="text" instantApply="true" preference="toastSubject">
+		<div>__VALINET_lang.defaultValue__ &quot;__VALINET_toastSubject.default__&quot;.</div>
+		<br/>
+		<div><strong>__VALINET_lang.toastBody__</strong></div>
+		<input style="width: 100%" type="text" instantApply="true" preference="toastBody">
+		<div>__VALINET_lang.defaultValue__ &quot;__VALINET_toastBody.default__&quot;.</div>
+		<br/>
+		<div><strong>__VALINET_lang.toastFooter__</strong></div>
+		<input style="width: 100%" type="text" instantApply="true" preference="toastFooter">
+		<div>__VALINET_lang.defaultValue__ &quot;__VALINET_toastFooter.default__&quot;.</div>
+		<br/>
+	    <div><strong>__VALINET_lang.toastDuration__</strong></div>
+		<select instantApply="true" preference="toastDuration">
+		  <option value="short">__VALINET_toastDuration.short__</option>
+		  <option value="long">__VALINET_toastDuration.long__</option>
+		  <option value="persist">__VALINET_toastDuration.persist__</option>
+		</select>
+		<div>__VALINET_lang.defaultValue__ &quot;__VALINET_toastDuration.long__&quot;.</div>
+		<br/>
+		<div><strong>__VALINET_lang.toastAudio__</strong></div>
+		<select instantApply="true" preference="toastAudio">
+		  <option value="silent">__VALINET_toastAudio.Silent__</option>
+		  <option value="ms-winsoundevent:Notification.Default">__VALINET_toastAudio.Default__</option>
+		  <option value="ms-winsoundevent:Notification.IM">__VALINET_toastAudio.IM__</option>
+		  <option value="ms-winsoundevent:Notification.Mail">__VALINET_toastAudio.Mail__</option>
+		  <option value="ms-winsoundevent:Notification.Reminder">__VALINET_toastAudio.Reminder__</option>
+		  <option value="ms-winsoundevent:Notification.SMS">__VALINET_toastAudio.SMS__</option>
+		  <option value="ms-winsoundevent:Notification.Looping.Alarm">__VALINET_toastAudio.LoopingAlarm__</option>
+		  <option value="ms-winsoundevent:Notification.Looping.Alarm2">__VALINET_toastAudio.LoopingAlarm2__</option>
+		  <option value="ms-winsoundevent:Notification.Looping.Alarm3">__VALINET_toastAudio.LoopingAlarm3__</option>
+		  <option value="ms-winsoundevent:Notification.Looping.Alarm4">__VALINET_toastAudio.LoopingAlarm4__</option>
+		  <option value="ms-winsoundevent:Notification.Looping.Alarm5">__VALINET_toastAudio.LoopingAlarm5__</option>
+		  <option value="ms-winsoundevent:Notification.Looping.Alarm6">__VALINET_toastAudio.LoopingAlarm6__</option>
+		  <option value="ms-winsoundevent:Notification.Looping.Alarm7">__VALINET_toastAudio.LoopingAlarm7__</option>
+		  <option value="ms-winsoundevent:Notification.Looping.Alarm8">__VALINET_toastAudio.LoopingAlarm8__</option>
+		  <option value="ms-winsoundevent:Notification.Looping.Alarm9">__VALINET_toastAudio.LoopingAlarm9__</option>
+		  <option value="ms-winsoundevent:Notification.Looping.Alarm10">__VALINET_toastAudio.LoopingAlarm10__</option>
+		  <option value="ms-winsoundevent:Notification.Looping.Call">__VALINET_toastAudio.LoopingCall__</option>
+		  <option value="ms-winsoundevent:Notification.Looping.Call2">__VALINET_toastAudio.LoopingCall2__</option>
+		  <option value="ms-winsoundevent:Notification.Looping.Call3">__VALINET_toastAudio.LoopingCall3__</option>
+		  <option value="ms-winsoundevent:Notification.Looping.Call4">__VALINET_toastAudio.LoopingCall4__</option>
+		  <option value="ms-winsoundevent:Notification.Looping.Call5">__VALINET_toastAudio.LoopingCall5__</option>
+		  <option value="ms-winsoundevent:Notification.Looping.Call6">__VALINET_toastAudio.LoopingCall6__</option>
+		  <option value="ms-winsoundevent:Notification.Looping.Call7">__VALINET_toastAudio.LoopingCall7__</option>
+		  <option value="ms-winsoundevent:Notification.Looping.Call8">__VALINET_toastAudio.LoopingCall8__</option>
+		  <option value="ms-winsoundevent:Notification.Looping.Call9">__VALINET_toastAudio.LoopingCall9__</option>
+		  <option value="ms-winsoundevent:Notification.Looping.Call10">__VALINET_toastAudio.LoopingCall10__</option>
+		</select>
+		<div>__VALINET_lang.defaultValue__ &quot;__VALINET_toastAudio.Mail__&quot;.</div>
+		<br/>
+		<div><strong>__VALINET_lang.toastLoopAudio__</strong></div>
+		<select instantApply="true" preference="toastLoopAudio">
+		  <option value="false">__VALINET_toastLoopAudio.false__</option>
+		  <option value="true">__VALINET_toastLoopAudio.true__</option>
+		</select>
+		<div>__VALINET_lang.defaultValue__ &quot;__VALINET_toastLoopAudio.false__&quot;.</div>
+		<br/>
+		<div><strong>__VALINET_lang.toastDisplayMessage__</strong></div>
+		<select instantApply="true" preference="toastDisplayMessage">
+		  <option value="new_window">__VALINET_toastDisplayMessage.nw__</option>
+		  <option value="new_tab">__VALINET_toastDisplayMessage.nt__</option>
+		  <option value="three_pane">__VALINET_toastDisplayMessage.3p__</option>
+		</select>
+		<div>__VALINET_lang.defaultValue__ &quot;__VALINET_toastDisplayMessage.3p__&quot;.</div>
+		<br/>
+		<div><strong>__VALINET_lang.appid__</strong></div>
+		<input style="width: 100%" type="text" instantApply="true" preference="appid">
+		<div>__VALINET_lang.defaultValue__ &quot;__VALINET_appid.default__&quot;.</div>
+		<br/>
+		<div><strong>__VALINET_lang.DemoToast__</strong></div>
+		<button id="demobtn">__VALINET_lang.DemoToastButton__</button>
+		<br/><br/>
+		<div><strong>__VALINET_lang.OtherOptions__</strong></div>
+		<button id="uninstallbtn">__VALINET_lang.UninstallButton__</button>
+		<button id="aboutbtn">__VALINET_lang.AboutButton__</button>
+		<br/><br/>
+      </label>
+    </div>
+  </body>
+</html>
