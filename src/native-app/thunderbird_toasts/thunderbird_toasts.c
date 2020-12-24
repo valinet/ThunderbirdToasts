@@ -1909,6 +1909,27 @@ BOOL install(BOOL uninstall)
     return TRUE;
 }
 
+DWORD KeepMinimized(
+    HWND hWnd
+)
+{
+    size_t i = 0;
+    while (i < 5000)
+    {
+        if (!IsIconic(hWnd))
+        {
+            Sleep(100);
+            ShowWindow(hWnd, SW_MINIMIZE);
+            Sleep(5);
+            ShowWindow(hWnd, SW_HIDE);
+            return 0;
+        }
+        i += 10;
+        Sleep(10);
+    }
+    return 0;
+}
+
 int WINAPI wWinMain(
     _In_ HINSTANCE hInstance,
     _In_opt_ HINSTANCE hPrevInstance,
@@ -1937,6 +1958,7 @@ int WINAPI wWinMain(
         return post_message();
     }
 
+    
     BOOL bOtherInstance = FALSE;
     TCHAR szAppName[_MAX_PATH];
     GetModuleFileName(
@@ -1947,6 +1969,9 @@ int WINAPI wWinMain(
     PathStripPath(
         szAppName
     );
+
+    DWORD dwProcessIdThunderbird = 0;
+    HWND hWnd = NULL;
     PROCESSENTRY32 entry;
     entry.dwSize = sizeof(PROCESSENTRY32);
     HANDLE snapshot = NULL;
@@ -1960,7 +1985,7 @@ int WINAPI wWinMain(
                 && entry.th32ProcessID != GetCurrentProcessId())
             {
                 bOtherInstance = TRUE;
-                if (hProcess = OpenProcess(
+                /*if (hProcess = OpenProcess(
                     PROCESS_ALL_ACCESS,
                     FALSE,
                     entry.th32ProcessID
@@ -1971,7 +1996,13 @@ int WINAPI wWinMain(
                         0
                     );
                     CloseHandle(hProcess);
-                }
+                }*/
+            }
+            if (!wcscmp(entry.szExeFile, L"thunderbird.exe")
+                && !dwProcessIdThunderbird
+                )
+            {
+                dwProcessIdThunderbird = entry.th32ProcessID;
             }
         }
     }
@@ -1979,6 +2010,8 @@ int WINAPI wWinMain(
     {
         return GetLastError();
     }
+    
+
     if (argc == 1)
     {
         // TO DO
@@ -2008,6 +2041,36 @@ int WINAPI wWinMain(
         );
         return 0;
     }
+
+
+    while (TRUE)
+    {
+        hWnd = dwProcessIdThunderbird;
+        EnumWindows(
+            EnumWindowsProc,
+            &hWnd
+        );
+        if (hWnd != dwProcessIdThunderbird)
+        {
+            break;
+        }
+        Sleep(TIMEOUT_WINDOW_CHECK);
+    }
+    //printf("%d %d\n", hWnd, IsIconic(hWnd));
+    if (IsIconic(hWnd))
+    {
+        CreateThread(
+            NULL,
+            (SIZE_T)0,
+            KeepMinimized,
+            hWnd,
+            (DWORD)0,
+            NULL
+        );
+    }
+
+
+
 
     WSADATA stWsa;
     SOCKET hSrvSock, hClnSock;
