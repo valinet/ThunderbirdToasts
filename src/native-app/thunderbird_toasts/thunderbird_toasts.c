@@ -2079,7 +2079,7 @@ int WINAPI wWinMain(
     char* pszRcvBuf;
     szSt_sockaddr_in = sizeof(struct sockaddr_in);
     stSrv.sin_family = AF_INET;
-    stSrv.sin_addr.s_addr = INADDR_ANY;
+    stSrv.sin_addr.s_addr = INADDR_LOOPBACK;
     stSrv.sin_port = htons(TCP_PORT);
 
     if (!(pszRcvBuf = VirtualAlloc(
